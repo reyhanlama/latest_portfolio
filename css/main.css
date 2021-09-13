@@ -71,6 +71,7 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
+  opacity: 70%;
 }
 
 nav ul a {
@@ -128,14 +129,41 @@ img {
   width: 100%;
 }
 
+.about {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
 .about h1 {
-  max-width: 700px;
+  width: 300px;
 }
 
 .about p {
-  max-width: 500px;
   line-height: 1.8;
-  font-size: 18px;
+  margin-top: 20px;
+  opacity: 70%;
+}
+
+.about .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.about .social a {
+  margin-right: 20px;
+  opacity: 70%;
+}
+
+.about .social a img {
+  height: 40px;
 }
 
 footer {
@@ -159,16 +187,24 @@ footer {
   filter: grayscale(0);
 }
 
-@media only screen and (max-width: 768px) {
+li:hover {
+  opacity: 100%;
+}
+
+.social a:hover {
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 708px) {
   main {
     margin: 40px 20px 0px 20px;
   }
   h2 {
     font-size: 24px;
-    width: 310px;
+    width: 410px;
     margin-top: 30px;
   }
-  .nav-menu {
+  .nav-item.hide {
     display: none;
   }
   .project-list {

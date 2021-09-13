@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/logo white.png" type="image/x-icon" />
+    <link rel="xicon" href="./assets/logo white.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Reyhan Tamang | UX Design</title>
@@ -14,23 +14,25 @@
       <nav class="navbar">
         <a href="#" class="nav-logo">Reyhan Tamang</a>
         <ul class="nav-menu">
-          <li class="nav-item about">
+          <li class="nav-item hide">
             <a href="#" class="about">About Me</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item hide">
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1NS2cbxN5oskWTFhHZ1ebgXW63YMjfiZZ/view"
               >Resume</a
             >
           </li>
-          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item show">
+            <a href="mailto: reyhantamang@gmail.com">Email Me</a>
+          </li>
         </ul>
       </nav>
       <section>
         <h2>
-          A Delhi-based User Experience Designer focusing on translating complex
-          systems into accessible abstractions.
+          I'm Reyhan - A Delhi based User Experience Designer focusing on
+          solving complexity to create better tangible results
         </h2>
         <div class="resume">
           <a
@@ -80,29 +82,34 @@
 
       <hr />
       <section class="about">
-        <h1>About Me</h1>
-        <p>
-          Proident anim veniam ipsum veniam cillum pariatur aliquip aute
-          consequat enim. Nulla ad est dolor amet non reprehenderit excepteur
-          reprehenderit mollit esse fugiat qui eiusmod anim. Quis in laboris est
-          adipisicing elit do elit ex officia commodo proident duis dolor.
-          Pariatur deserunt aliqua do commodo.
-        </p>
+        <div class="info">
+          <h1>About Me</h1>
+          <p>
+            Hi! I am Reyhan. I am a self-taught designer who recently has taken
+            a keen interest in User Experience and User Interface Design. I like
+            to solve problems, and I have a keen interest in Human Psychology.
+            My goal is to help others solve their design problems in a viable
+            manner and reach sustainable and tangible results.
+          </p>
+          <div class="social">
+            <a href="https://dribbble.com/reyhanlama"
+              ><img src="./assets/dribbble.svg" alt=""
+            /></a>
+            <a href="https://www.behance.net/reyhantamang"
+              ><img src="./assets/behance.svg" alt=""
+            /></a>
+            <a href="https://medium.com/@reyhantamang"
+              ><img src="./assets/medium-m.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/profile.png" alt="" />
+        </div>
       </section>
     </main>
     <footer>
       <p>Copyright Reyhan Tamang 2021</p>
     </footer>
-    <script>
-      const hamburger = document.querySelector(".hamburger")
-      const navMenu = document.querySelector(".nav-menu")
-
-      hamburger.addEventListener("click", mobileMenu)
-
-      function mobileMenu() {
-        hamburger.classList.toggle("active")
-        navMenu.classList.toggle("active")
-      }
-    </script>
   </body>
 </html>
