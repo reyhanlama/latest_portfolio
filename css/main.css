@@ -220,5 +220,18 @@ li:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .single-project img {
+    -webkit-filter: none;
+    filter: grayscale(0%);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .single-project:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  .image {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
