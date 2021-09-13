@@ -45,6 +45,7 @@ nav {
     font-weight: 700;
     font-size: 24px;
   }
+
   ul {
     display: flex;
     justify-content: space-between;
@@ -55,12 +56,16 @@ nav {
     a {
       color: black;
       padding-left: 100px;
-      font-size: 18px;
+      font-size: 20px;
       text-decoration: none;
     }
   }
 }
-
+.show {
+  color: black;
+  opacity: 70%;
+  display: none;
+}
 section {
   max-width: 550px;
   margin: 50px 0px 50px 0px;
@@ -156,11 +161,14 @@ li:hover {
   }
   h2 {
     font-size: 24px;
-    width: 410px;
+    padding-right: 50px;
     margin-top: 30px;
   }
-  .nav-item.hide {
+  .nav-item {
     display: none;
+  }
+  .show {
+    display: block;
   }
 
   .project-list {
