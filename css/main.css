@@ -7,8 +7,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  margin: 50px 200px 0px 200px;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
+}
+
+main {
+  margin: 50px 200px 0px 200px;
 }
 
 h1,
@@ -64,7 +69,7 @@ nav ul a {
   text-decoration: none;
 }
 
-main {
+section {
   max-width: 550px;
   margin: 50px 0px 50px 0px;
 }
@@ -120,5 +125,26 @@ img {
   max-width: 500px;
   line-height: 1.8;
   font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+}
+
+.single-project img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.single-project:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 /*# sourceMappingURL=main.css.map */
