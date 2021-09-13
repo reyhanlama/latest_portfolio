@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/logo white.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
+
     <title>Reyhan Tamang | UX Design</title>
   </head>
   <body>
     <main>
-      <nav>
-        <p class="logo">Reyhan Tamang</p>
-        <ul>
-          <a href="#">About Me</a>
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1NS2cbxN5oskWTFhHZ1ebgXW63YMjfiZZ/view"
-            >Resume</a
-          >
-          <a href="#">Contact</a>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">Reyhan Tamang</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1NS2cbxN5oskWTFhHZ1ebgXW63YMjfiZZ/view"
+              >Resume</a
+            >
+          </li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
       <section>
@@ -88,5 +93,16 @@
     <footer>
       <p>Copyright Reyhan Tamang 2021</p>
     </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger")
+      const navMenu = document.querySelector(".nav-menu")
+
+      hamburger.addEventListener("click", mobileMenu)
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active")
+        navMenu.classList.toggle("active")
+      }
+    </script>
   </body>
 </html>
