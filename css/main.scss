@@ -30,6 +30,7 @@ h2 {
   font-weight: 400;
   margin-top: 100px;
   font-size: 36px;
+  opacity: 90%;
 }
 .logo {
   font-size: 24px;
@@ -70,13 +71,17 @@ section {
   max-width: 550px;
   margin: 50px 0px 50px 0px;
 }
+.title {
+  font-weight: 700;
+  text-decoration: underline;
+}
 .resume {
   padding-top: 40px;
 
   a {
     text-decoration: underline;
     color: black;
-    opacity: 70%;
+    opacity: 80%;
     font-weight: 400px;
   }
 }
