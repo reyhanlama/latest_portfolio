@@ -219,6 +219,79 @@ li:hover {
   font-size: 18px;
 }
 
+.about-section {
+  margin-top: 100px;
+}
+
+.about-section h1 {
+  width: 700px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about-section h2 {
+  margin: 10px 0 0 0;
+  font-size: 64px;
+  opacity: 50%;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.details .info {
+  max-width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.details .info h3 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 2%;
+  opacity: 50%;
+}
+
+.details .info p {
+  line-height: 30px;
+  letter-spacing: 2%;
+  opacity: 80%;
+}
+
+.details .info-photo {
+  width: 500px;
+}
+
+.details .info-photo img {
+  width: 100%;
+}
+
+.skill-section {
+  width: 500px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  margin: -50px -50px 0 0;
+}
+
 @media only screen and (max-width: 708px) {
   main {
     margin: 40px 20px 0px 20px;
