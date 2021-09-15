@@ -13,33 +13,36 @@ body {
 }
 
 main {
-  margin: 50px 200px 0px 200px;
+  margin: 50px 100px 0px 100px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
+}
+
+hr {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 h1 {
   font-size: 64px;
-  width: 250px;
   font-weight: 400;
 }
 
 h2 {
   font-weight: 400;
-  margin-top: 100px;
   font-size: 36px;
   opacity: 90%;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
 }
 
 nav {
@@ -54,13 +57,6 @@ nav {
           align-items: center;
 }
 
-nav .nav-logo {
-  color: black;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,13 +69,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   opacity: 70%;
-}
-
-nav ul a {
-  color: black;
   padding-left: 100px;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 .show {
@@ -88,17 +78,13 @@ nav ul a {
   display: none;
 }
 
-section {
-  max-width: 550px;
-  margin: 50px 0px 50px 0px;
+.hero {
+  max-width: 600px;
+  margin: 100px 100px 100px 100px;
 }
 
-.title {
+.hero .title {
   font-weight: 700;
-}
-
-.resume {
-  padding-top: 40px;
 }
 
 .resume a {
@@ -108,39 +94,36 @@ section {
   font-weight: 400px;
 }
 
-hr {
-  margin-top: 80px;
-  margin-bottom: 80px;
+.project-section h1 {
+  margin-bottom: 50px;
+  max-width: 250px;
 }
 
-.project-list {
+.project-section .project-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  margin-top: 50px;
+  grid-gap: 50px;
 }
 
-.single-project {
-  max-width: 500px;
-  margin-bottom: 30px;
-}
-
-.single-project a {
-  color: black;
-  text-decoration: none;
-}
-
-.single-project h4 {
-  font-weight: 300;
-}
-
-img {
+.project-section .project-list .single-project img {
   width: 100%;
 }
 
+.project-section .project-list .single-project h3 {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.project-section .project-list .single-project h4 {
+  margin: 0;
+  opacity: 70%;
+  font-weight: 400;
+}
+
 .about {
+  margin: 100px 100px 0px 100px;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -151,14 +134,10 @@ img {
   grid-gap: 100px;
 }
 
-.about h1 {
-  width: 300px;
-}
-
 .about p {
   line-height: 1.8;
-  margin-top: 20px;
-  opacity: 70%;
+  margin-top: 10px;
+  opacity: 80%;
 }
 
 .about .social {
@@ -169,12 +148,10 @@ img {
 }
 
 .about .social a {
-  margin-right: 20px;
-  opacity: 70%;
-}
-
-.about .social a img {
-  height: 40px;
+  margin-right: 30px;
+  font-size: 24px;
+  opacity: 100%;
+  font-weight: 600;
 }
 
 footer {
@@ -186,37 +163,10 @@ footer {
   margin-top: 100px;
 }
 
-.single-project img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.single-project:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-li:hover {
-  opacity: 100%;
-}
-
-.social a:hover {
-  opacity: 100%;
-}
-
-.backtop {
-  color: black;
-}
-
-.bottom-mail {
-  margin-top: 30px;
-}
-
-.bottom-mail a {
-  color: black;
-  font-size: 18px;
+.backtop h3 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .about-section {
@@ -242,7 +192,7 @@ li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .details .info {
@@ -285,16 +235,38 @@ li:hover {
 }
 
 .skill-section {
-  width: 500px;
+  width: 600px;
   background-color: black;
   color: white;
   padding: 50px;
-  margin: -50px -50px 0 0;
+  position: relative;
+  z-index: -50;
+  margin-top: -30px;
+}
+
+.skill-section .skills p {
+  opacity: 80%;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+}
+
+.skills-list li {
+  padding-bottom: 10px;
+  letter-spacing: 2%;
 }
 
 @media only screen and (max-width: 708px) {
   main {
     margin: 40px 20px 0px 20px;
+  }
+  .hero {
+    margin: 50px 0;
   }
   h2 {
     font-size: 24px;
@@ -307,22 +279,30 @@ li:hover {
   .show {
     display: block;
   }
-  .project-list {
+  .project-section .project-list {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .single-project img {
-    -webkit-filter: none;
-    filter: grayscale(0%);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+  .about {
+    margin: 0;
   }
-  .single-project:hover img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+  .about p {
+    width: 90vw;
   }
   .image {
     display: none;
   }
+}
+
+li:hover {
+  opacity: 100%;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+.backtop h3:hover {
+  opacity: 50%;
 }
 /*# sourceMappingURL=main.css.map */
