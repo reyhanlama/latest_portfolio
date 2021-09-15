@@ -179,6 +179,61 @@ li:hover {
     font-size: 18px;
   }
 }
+
+//about page //
+.about-section {
+  margin-top: 100px;
+  h1 {
+    width: 700px;
+    font-weight: 700;
+    margin: 0;
+  }
+  h2 {
+    margin: 10px 0 0 0;
+    font-size: 64px;
+    opacity: 50%;
+  }
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  .info {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 40px;
+      letter-spacing: 2%;
+      opacity: 50%;
+    }
+    p {
+      line-height: 30px;
+      letter-spacing: 2%;
+      opacity: 80%;
+    }
+  }
+  .info-photo {
+    width: 500px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.skill-section {
+  width: 500px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  margin: -50px -50px 0 0;
+}
+
+//end of about page //
+
 @media only screen and (max-width: 708px) {
   main {
     margin: 40px 20px 0px 20px;
