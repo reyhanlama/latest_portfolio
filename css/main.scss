@@ -1,26 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;700&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  margin: 0;
+  font-family: "Epilogue", sans-serif;
+  margin: 40px 200px 0px 200px;
   padding: 0;
-  font-size: 18px;
-  background-color: #F5F5F3;
-}
-main {
-  margin: 50px 100px 0px 100px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0 0 30px 0;
-  padding: 0;
+  font-size: 16px;
+  background-color: white;
+  max-width: 1440px;
 }
 
 hr {
@@ -34,32 +24,32 @@ a {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 400;
+  line-height: 150%;
 }
 
 h2 {
+  font-size: 24px;
+  line-height: 100%;
   font-weight: 400;
-  font-size: 36px;
-  opacity: 90%;
 }
 
-nav {
+p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/// sections ////
+
+.nav-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-
-    li {
-      list-style-type: none;
-      opacity: 70%;
-      padding-left: 100px;
-    }
+  justify-content: right;
+  .nav-item {
+    margin-right: 60px;
   }
 }
+
 .show {
   color: black;
   opacity: 70%;
@@ -69,8 +59,8 @@ nav {
 //end of nav//
 
 .hero {
-  max-width: 600px;
-  margin: 100px 100px 100px 100px;
+  max-width: 700px;
+  margin-top: 100px;
   .title {
     font-weight: 700;
   }
@@ -82,35 +72,37 @@ nav {
     color: black;
     opacity: 80%;
     font-weight: 400px;
+    font-size: 20px;
   }
 }
-
-.project-section {
-  h1 {
-    margin-bottom: 50px;
-    max-width: 250px;
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+.single-project {
+  display: flex;
+  align-items: start;
+  margin-bottom: 60px;
+  img {
+    max-width: 500px;
   }
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    .single-project {
-      img {
-        width: 100%;
-      }
-      h3 {
-        margin-bottom: 10px;
-        padding: 0;
-      }
-      h4 {
-        margin: 0;
-        opacity: 70%;
-        font-weight: 400;
-      }
+  .project-details {
+    padding-left: 60px;
+    h1 {
+      font-weight: 700;
+      margin: 0px;
+      line-height: 100%;
+    }
+    h2 {
+      margin-bottom: 28px;
     }
   }
 }
-
+.case-study {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 600;
+}
 .about {
   margin: 100px 100px 0px 100px;
   max-width: fit-content;
