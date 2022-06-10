@@ -120,7 +120,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .hero-section {
     padding-top: 20px;
     padding-left: 20px;
@@ -129,19 +129,24 @@ footer {
     max-width: 400px;
   }
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
   .btn {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .project-title {
     margin: 20px 0 0 20px;
   }
   .bottom {
     margin: 0 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hero {
+    width: 300px;
   }
 }
