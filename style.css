@@ -150,3 +150,8 @@ footer {
     width: 300px;
   }
 }
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
