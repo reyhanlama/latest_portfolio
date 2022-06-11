@@ -125,7 +125,7 @@ footer {
 
 @media only screen and (max-width: 650px) {
   .hero-section {
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 20px;
   }
   .hero {
